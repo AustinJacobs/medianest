@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medianest: Movies</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-medium.css">
+  <link rel="stylesheet" href="css/styles-large.css">
+  <link rel="stylesheet" href="css/styles-extra-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="no-scroll">
+  <header>
+    <a href="index.html"><img id="logo-image" src="images/logo-cropped200x200.png" alt="TV with a play button."></a>
+    <h1 id="page_title">MEDIANEST</h1>
+  </header>
+  <div id="modal">
+    <div id="modal-content-top">
+      <button id="exit"><i class="fas fa-chevron-circle-left"></i></i></button>
+      <p id="movie-detail">Movie Details</p>
+      <img id="modal-logo-image" src="images/logo-cropped200x200.png" alt="TV with a play button.">
+    </div>
+    <div id="modal-content-main"></div>
+  </div>
+  <main id="main">
+    <div id="search_bar">
+      <input type="text" class="search_input" id="title_input" placeholder="Search" onfocus="this.value=''" value="">
+      <button id="search-button-movies" class="fas fa-search"></button>
+    </div>
+    <div id="error"></div>
+    <div id="searched-titles" class="section-titles">
+      <h2>Search Results</h2>
+      <hr class="hr-small">
+      <div class="media-output" id="searched-movies"></div>
+    </div>
+    <div class="section-titles">
+      <h2>All Movies</h2>
+      <hr class="hr-small">
+      <div class="media-output" id="all-movies"></div>
+      <p class="errors">Sorry, we are encountering an error. Try again later.</p>
+    </div>
+    <div id="page-buttons">
+      <button class="prev-content"><i class="fas fa-arrow-circle-left"></i></button>
+      <button class="next-content"><i class="fas fa-arrow-circle-right"></i></button>
+    </div>
+    <button class="back-top">Go to top</button>
+    <div id="menu">
+      <a class="menu_link" href="index.html"><i class="fas fa-home menu_i"></i></a>
+      <a class="menu_link" href="movies.html"><i class="fas fa-video menu_i active"></i></a>
+      <a class="menu_link" href="series.html"><i class="fas fa-tv menu_i"></i></a>
+
+      <p class="menu_text">HOME</p>
+      <p class="menu_text">MOVIES</p>
+      <p class="menu_text">SHOWS</p>
+    </div>
+    <footer>
+      <p>Images and other movie/show information from TMDb.</p>
+      <a href="https://www.themoviedb.org/.">
+        <p class="website-p">TMDb Website</p>
+      </a>
+      <img class="icon-image" src="images/icon.svg" alt="">
+    </footer>
+  </main>
+  <script src="js/movies.js" type="module"></script>
+</body>
+
+</html>

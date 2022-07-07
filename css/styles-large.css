@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1200px) {
+    .media-output {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      #modal-content-top {
+        width: 1100px;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      #modal-content-main {
+        width: 600px;
+        grid-template-columns: 1fr 500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        justify-content: center;
+      }
+
+      .overlayImage {
+        width: 350px;
+        grid-column: 1/2;
+      }
+
+      .overlayTitleStyle {
+        grid-column: 1/2;
+      }
+      
+      #modal-tiny-details {
+          grid-column: 1/2;
+      }
+      
+      .overlayRatingStyle {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: center;
+      }
+      
+      .overlayOverviewStyle {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 60px;
+        justify-self: center;
+        font-size: 20px;
+      }
+  }
